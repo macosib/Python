@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:13.4
+    hostname: '127.0.0.1'
+    ports:
+      - "5430:5432"
+    environment:
+      POSTGRES_PASSWORD: asyncio
+      POSTGRES_USER: asyncio
+      POSTGRES_DB: asyncio
